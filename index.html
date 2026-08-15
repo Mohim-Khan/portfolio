@@ -67,7 +67,7 @@
 
     <div class="container hero-metrics" aria-label="Quick analytics metrics">
       <div class="metric reveal">
-        <span class="metric-num" data-count="8">0</span>
+        <span class="metric-num" data-count="9">0</span>
         <span class="metric-label">Projects Completed</span>
       </div>
       <div class="metric reveal">
@@ -79,7 +79,7 @@
         <span class="metric-label">Dashboards Built</span>
       </div>
       <div class="metric reveal">
-        <span class="metric-num" data-count="793030" data-suffix="+">0</span>
+        <span class="metric-num" data-count="793654" data-suffix="+">0</span>
         <span class="metric-label">Records Analyzed</span>
       </div>
       <div class="metric reveal">
@@ -103,7 +103,7 @@
       <div class="snapshot-grid">
         <div class="kpi-card reveal">
           <div class="kpi-icon">📊</div>
-          <div class="kpi-num">8</div>
+          <div class="kpi-num">9</div>
           <div class="kpi-label">Projects Completed</div>
         </div>
         <div class="kpi-card reveal">
@@ -118,7 +118,7 @@
         </div>
         <div class="kpi-card reveal">
           <div class="kpi-icon">🧮</div>
-          <div class="kpi-num">8</div>
+          <div class="kpi-num">9</div>
           <div class="kpi-label">Datasets Analyzed</div>
         </div>
         <div class="kpi-card reveal">
@@ -249,7 +249,7 @@
     <div class="container">
       <div class="section-head">
         <p class="eyebrow reveal">Featured Projects</p>
-        <h2 class="reveal">Eight projects. Real datasets. Real business questions.</h2>
+        <h2 class="reveal">Nine projects. Real datasets. Real business questions.</h2>
       </div>
 
       <div class="project-list">
@@ -446,6 +446,30 @@
             <div class="project-metric">93,357 Customers Segmented · 7 Segments</div>
             <div class="project-actions">
               <a href="https://github.com/Mohim-Khan/customer-segmentation-rfm-analysis" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View on GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual" data-icon="forecast">
+            <svg viewBox="0 0 200 120" class="project-svg"><polyline points="10,90 40,80 70,60 100,65 130,40 160,45 190,20" fill="none" stroke-width="5"/><polyline points="130,40 160,30 190,10" fill="none" stroke-width="3" stroke-dasharray="6,5"/><circle cx="130" cy="40" r="5"/></svg>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <h3>Retail Demand Forecasting</h3>
+              <span class="project-tool">Python · scikit-learn</span>
+            </div>
+            <p class="project-problem"><strong>Business Problem:</strong> Retail and supply chain teams need a forward-looking demand forecast — not just a historical dashboard — to plan inventory, staffing, and promotions ahead of time.</p>
+            <p class="project-solution"><strong>Solution:</strong> Built a 12-week-ahead weekly demand forecast per product category using engineered trend, Fourier seasonality, and promo-week features in a linear regression model, benchmarked against a seasonal-naive baseline with a documented backtest.</p>
+            <ul class="project-insights">
+              <li>Cut forecast error roughly in half: 4.96% average MAPE vs. 9.62% for the seasonal-naive baseline — a 48.4% relative improvement</li>
+              <li>Improved accuracy in every category, from +3.5 to +7.6 percentage points of MAPE, largest in Electronics (11.4% → 3.8%) where promo-driven spikes are hardest for a naive method to catch</li>
+              <li>Produced a 12-week forward unit forecast per category with 80% confidence bands to support safety-stock decisions</li>
+              <li>Quantified the promotional lift (22–38% per promo week) baked into the forecast, separating promo-driven spikes from organic seasonal demand</li>
+            </ul>
+            <div class="project-metric">4.96% MAPE · 48% Error Reduction vs. Baseline</div>
+            <div class="project-actions">
+              <a href="https://github.com/Mohim-Khan/retail-demand-forecasting" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View on GitHub</a>
             </div>
           </div>
         </article>
