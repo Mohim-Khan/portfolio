@@ -67,11 +67,11 @@
 
     <div class="container hero-metrics" aria-label="Quick analytics metrics">
       <div class="metric reveal">
-        <span class="metric-num" data-count="10">0</span>
+        <span class="metric-num" data-count="11">0</span>
         <span class="metric-label">Projects Completed</span>
       </div>
       <div class="metric reveal">
-        <span class="metric-num" data-count="90" data-suffix="+">0</span>
+        <span class="metric-num" data-count="95" data-suffix="+">0</span>
         <span class="metric-label">SQL Queries Developed</span>
       </div>
       <div class="metric reveal">
@@ -103,12 +103,12 @@
       <div class="snapshot-grid">
         <div class="kpi-card reveal">
           <div class="kpi-icon">📊</div>
-          <div class="kpi-num">10</div>
+          <div class="kpi-num">11</div>
           <div class="kpi-label">Projects Completed</div>
         </div>
         <div class="kpi-card reveal">
           <div class="kpi-icon">🗃️</div>
-          <div class="kpi-num">90+</div>
+          <div class="kpi-num">95+</div>
           <div class="kpi-label">SQL Analysis Queries</div>
         </div>
         <div class="kpi-card reveal">
@@ -249,7 +249,7 @@
     <div class="container">
       <div class="section-head">
         <p class="eyebrow reveal">Featured Projects</p>
-        <h2 class="reveal">Ten projects. Real datasets. Real business questions.</h2>
+        <h2 class="reveal">Eleven projects. Real datasets. Real business questions.</h2>
       </div>
 
       <div class="project-list">
@@ -494,6 +494,31 @@
             <div class="project-metric">788K Rows Modeled · 102 SKUs · 14x Coverage Spread</div>
             <div class="project-actions">
               <a href="https://github.com/Mohim-Khan/store-territory-performance-dashboard" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View on GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual" data-icon="process">
+            <svg viewBox="0 0 200 120" class="project-svg"><rect x="10" y="45" width="40" height="30" rx="4" fill="none" stroke-width="5"/><path d="M50 60h25" fill="none" stroke-width="5"/><path d="M68 52l10 8-10 8" fill="none" stroke-width="5"/><rect x="80" y="45" width="40" height="30" rx="4" fill="none" stroke-width="5"/><path d="M120 60h25" fill="none" stroke-width="5"/><path d="M138 52l10 8-10 8" fill="none" stroke-width="5"/><rect x="150" y="45" width="40" height="30" rx="4" fill="none" stroke-width="5"/></svg>
+          </div>
+          <div class="project-body">
+            <div class="project-top">
+              <h3>Order-to-Delivery Process Analysis (BA Case Study)</h3>
+              <span class="project-tool">SQL · Power BI · BRD</span>
+            </div>
+            <p class="project-problem"><strong>Business Problem:</strong> Customer complaints about late/failed deliveries were rising, with no visibility into which stage of the order-to-delivery process was actually causing the breakdown — any fix proposed without that visibility was a guess.</p>
+            <p class="project-solution"><strong>Solution:</strong> Wrote a 1-page BRD to define the problem and success metric as if briefed by an Operations Manager, mapped current- and future-state process flows, then used SQL on ~95K Olist orders to measure time spent at each stage and identify which stage's duration actually predicted lateness — not just which stage consumed the most time.</p>
+            <ul class="project-insights">
+              <li>Found carrier transit consumes 74% of total order time but is a weak lateness predictor — it's largely geography-driven and not internally controllable</li>
+              <li>Found orders with above-average internal dispatch time had more than double the late-delivery rate (12.59% vs. 5.91%), isolating the real, actionable bottleneck</li>
+              <li>Drilled into dispatch time by product category and found bulky/oversized categories (office furniture, home construction, large appliances, furniture) ran 1.2–3.5x longer than the network average</li>
+              <li>Proposed a future-state process with a dedicated pre-pack staging lane for bulky SKUs, targeting the ~2.4% of order volume driving a disproportionate share of dispatch delay</li>
+              <li>Documented the source system's timestamp granularity as a stated data limitation rather than fabricating a finer breakdown it couldn't support</li>
+            </ul>
+            <div class="project-metric">95K Orders Analyzed · 2x Late-Rate Gap Identified</div>
+            <div class="project-actions">
+              <a href="https://github.com/Mohim-Khan/order-to-delievery-process-analysis" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View on GitHub</a>
             </div>
           </div>
         </article>
